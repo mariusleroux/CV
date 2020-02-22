@@ -1,0 +1,31 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.me {
+    height: 10rem;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+p {
+    padding: 0 20px 0 20px;
+}
+
+.row {
+    padding-bottom: 1em;
+}
+
+.jumbotron {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.lead {
+    text-align: justify;
+}
+
+.carousel-item.active {
+    display:block;
+    border: solid 1px black;
+}
