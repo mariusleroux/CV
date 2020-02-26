@@ -209,7 +209,7 @@ p {
 }
 
 table td {
-    text-align: justify;
+    text-align: left;
     vertical-align: top;
 }
 
@@ -247,7 +247,7 @@ table {
     margin-right: 10px;
 }
 
-.col-sm-6 {
+.col-md-6 {
     padding: 10px;
 }
 
