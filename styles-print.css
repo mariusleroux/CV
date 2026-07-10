@@ -1,0 +1,226 @@
+/* Compact, print-friendly CV layout */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    line-height: 1.3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 6px;
+}
+
+.jumbotron {
+    padding: 0.2em 0;
+    margin-bottom: 0.4em;
+    background: none;
+}
+
+.header h1 {
+    font-size: 16pt;
+    margin: 0 0 2px 0;
+}
+
+.header h6 {
+    font-size: 9pt;
+    margin: 0;
+}
+
+.me {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 8px;
+}
+
+p,
+.lead {
+    padding: 0;
+    margin: 0 0 0.4em 0;
+    text-align: left;
+}
+
+.row {
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+.col-sm-2 {
+    flex: 0 0 110px;
+    max-width: 110px;
+    padding: 0 4px 0 0;
+    font-size: 8.5pt;
+}
+
+.col-sm {
+    padding: 0;
+    font-size: 8.5pt;
+    text-align: left;
+}
+
+h3 {
+    font-size: 11pt;
+    margin: 0.6em 0 0.2em 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+}
+
+table {
+    margin: 0;
+}
+
+table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0 4px 1px 0;
+}
+
+/* Linear timeline (no zigzag) */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: static;
+}
+
+.timeline:before {
+    display: none;
+}
+
+.timeline > li {
+    margin-bottom: 0.3em;
+    position: static;
+    page-break-inside: avoid;
+}
+
+.timeline-badge {
+    display: none;
+}
+
+.timeline > li > .timeline-panel,
+.timeline > li.timeline-inverted > .timeline-panel {
+    width: 100%;
+    float: none;
+    border: none;
+    border-left: 2px solid #bbb;
+    border-radius: 0;
+    padding: 1px 0 1px 8px;
+    box-shadow: none;
+    margin: 0;
+}
+
+.timeline > li > .timeline-panel:before,
+.timeline > li > .timeline-panel:after,
+.timeline > li.timeline-inverted > .timeline-panel:before,
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    display: none;
+}
+
+.timeline-title {
+    font-size: 9.5pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.timeline-heading p {
+    margin: 0;
+}
+
+.timeline-heading p small {
+    font-size: 8.5pt;
+}
+
+.timeline-body > p {
+    margin: 0;
+}
+
+.timeline-body br {
+    display: none;
+}
+
+.timeline-body table {
+    font-size: 8.5pt;
+}
+
+.timeline-body table td:first-child {
+    white-space: nowrap;
+    width: 1%;
+}
+
+/* Full-width project blocks */
+.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.project {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 0.3em 0;
+    box-shadow: none;
+    page-break-inside: avoid;
+}
+
+.project img {
+    height: 36px;
+    width: 36px;
+    margin-right: 6px;
+}
+
+.project h5 {
+    font-size: 10pt;
+    margin: 0;
+}
+
+.project h6 {
+    font-size: 8.5pt;
+    margin: 0 0 2px 0;
+}
+
+.card-text {
+    font-size: 8.5pt;
+    margin: 1px 0;
+    text-align: left;
+}
+
+.project table {
+    font-size: 8pt;
+    margin-top: 1px;
+}
+
+.mb-3 {
+    margin-bottom: 0.2rem !important;
+}
+
+.h-100 {
+    height: auto !important;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media print {
+    @page {
+        margin: 0.5cm;
+        size: A4;
+    }
+
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    a[href]:after {
+        content: none;
+    }
+}
